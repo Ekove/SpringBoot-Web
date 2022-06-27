@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 @Component
 public class WebSocketEventListener
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketEventListener.class);
+    //private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketEventListener.class);
 
     @Autowired
     private SimpMessageSendingOperations sendingOperations;
@@ -24,7 +24,7 @@ public class WebSocketEventListener
     @EventListener
     public void handleWebSocketConnectListener(final SessionConnectedEvent event)
     {
-        LOGGER.info("Ding! We have a new  connection here.");
+       // LOGGER.info("Ding! We have a new  connection here.");
     }
 
     @EventListener
